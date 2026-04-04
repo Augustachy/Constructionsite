@@ -4,12 +4,12 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import PWARegister from '@/components/PWARegister'
 
-const BASE_URL = 'https://felixbuilds.com'
+const BASE_URL = 'https://ogochukwuebuka.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'FelixBuilds Construction — Premium Construction Company in Nigeria',
+    default: 'Ogochukwuebuka Construction — Premium Construction Company in Nigeria',
     template: '%s | FelixBuilds Construction',
   },
   description:
@@ -25,16 +25,17 @@ export const metadata: Metadata = {
     'industrial construction Lagos',
     'real estate development Nigeria',
     'civil engineering Nigeria',
+    'sales of property'
   ],
-  authors: [{ name: 'FelixBuilds Construction', url: BASE_URL }],
-  creator: 'FelixBuilds Construction',
-  publisher: 'FelixBuilds Construction',
+  authors: [{ name: 'Ogochukwuebuka Construction', url: BASE_URL }],
+  creator: 'Ogochukwuebuka Construction',
+  publisher: 'Ogochukwuebuka Construction',
   alternates: { canonical: BASE_URL },
   openGraph: {
     type: 'website',
     url: BASE_URL,
-    siteName: 'FelixBuilds Construction',
-    title: 'FelixBuilds Construction — Premium Construction Company in Nigeria',
+    siteName: 'Ogochukwuebuka  Construction',
+    title: 'Ogochukwuebuka  Construction — Premium Construction Company in Nigeria',
     description:
       "Nigeria's most trusted construction company. 250+ completed projects. Building landmarks that define Lagos.",
     images: [{ url: `${BASE_URL}/og-image.jpg`, width: 1200, height: 630, alt: 'FelixBuilds Construction' }],
@@ -42,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@felixbuilds',
-    creator: '@felixbuilds',
-    title: 'FelixBuilds Construction — Premium Construction Company in Nigeria',
+    site: '@Ogochukwuebukaconstruction',
+    creator: '@Ogochukwuebukaconstruction',
+    title: 'Ogochukwuebuka  Construction — Premium Construction Company in Nigeria',
     description: "Nigeria's premier construction firm. 250+ projects. Building landmarks.",
     images: [`${BASE_URL}/og-image.jpg`],
   },
@@ -97,25 +98,25 @@ const jsonLd = {
         availableLanguage: 'English',
       },
       sameAs: [
-        'https://www.facebook.com/felixbuilds',
-        'https://www.instagram.com/felixbuilds',
-        'https://www.linkedin.com/company/felixbuilds',
-        'https://twitter.com/felixbuilds',
+        'https://www.facebook.com/Ogochukwuebuka ',
+        'https://www.instagram.com/Ogochukwuebuka ',
+        'https://www.linkedin.com/company/Ogochukwuebuka ',
+        'https://twitter.com/Ogochukwuebuka ',
       ],
     },
     {
       '@type': 'LocalBusiness',
       '@id': `${BASE_URL}/#localbusiness`,
-      name: 'FelixBuilds Construction',
+      name: 'Ogochukwuebuka  Construction',
       image: `${BASE_URL}/og-image.jpg`,
       url: BASE_URL,
       telephone: '+234-800-1234-567',
-      email: 'hello@felixbuilds.com',
+      email: 'hello@Ogochukwuebukaconstruction.com',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Plot 14, Admiralty Way',
-        addressLocality: 'Lekki Phase 1',
-        addressRegion: 'Lagos',
+        streetAddress: 'Anambra',
+        addressLocality: 'Anambra',
+        addressRegion: 'Anambra',
         addressCountry: 'NG',
       },
       openingHoursSpecification: [
@@ -127,7 +128,7 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': `${BASE_URL}/#website`,
       url: BASE_URL,
-      name: 'FelixBuilds Construction',
+      name: 'Ogochukwuebuka  Construction',
       potentialAction: {
         '@type': 'SearchAction',
         target: `${BASE_URL}/projects?search={search_term_string}`,
