@@ -22,7 +22,7 @@ const services = [
     tagline: 'Ideas shaped into reality',
     description:
       'Architectural planning, structural design, and project visualization to bring ideas into reality.',
-    image: '/images/plan.png',
+    image: '/images/Design.jpeg',
     features: [
       'Architectural planning',
       'Structural design',
@@ -129,7 +129,7 @@ export default function ServicesPage() {
     <>
       
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
+      <section className="relative pt-32 pb-10 bg-white overflow-hidden">
         <div className=" absolute top-0 left-0 right-0" />
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-3xl">
@@ -207,7 +207,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process */}
-      <section className="py-24 bg-white ">
+      <section className="py-16 bg-white ">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-14">
             <p className="text-[#00AEEF] font-mono text-sm uppercase tracking-widest mb-2">How We Work</p>
@@ -239,7 +239,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="font-display text-4xl font-bold text-black mb-4">Start Your Project Today</h2>
           <p className="text-black/70 mb-8">Tell us what you need to build. We'll handle everything else.</p>

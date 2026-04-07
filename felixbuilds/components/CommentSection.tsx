@@ -18,18 +18,18 @@ async function apiPost(path: string, body: object) {
 
 const SEED_COMMENTS: Comment[] = [
   {
-    id: '1', name: 'Adaeze Nwosu', initials: 'AN',
-    text: 'This transformed our family home completely. The team was professional, punctual, and the finish is absolutely world-class. Highly recommend to everyone!',
+    id: '1', name: 'Ezenwa', initials: 'AN',
+    text: 'This company transformed our commercial buildingcompletely. The team was professional, punctual, and the finish is absolutely world-class. Highly recommend to everyone!',
     timestamp: '2 days ago', likes: 24, liked: false, isHidden: false,
     replies: [{
       id: 'r1', name: 'Ogochukwuebuka Construction', initials: 'OC',
-      text: 'Thank you so much, Adaeze! It was a pleasure working on your home. We\'re delighted you love it! 🏠',
+      text: 'Thank you so much, Ezenwa! It was a pleasure working on your for you. We\'re delighted you love it! ',
       timestamp: '1 day ago', likes: 8, liked: false,
     }],
   },
   {
     id: '2', name: 'Chukwuemeka Obi', initials: 'CO',
-    text: 'We hired them for our office complex in Ikeja. Delivered on time and the structural quality exceeded our expectations. Will definitely work with them again.',
+    text: 'We hired them for our office complex in Awka. Delivered on time and the structural quality exceeded our expectations. Will definitely work with them again.',
     timestamp: '5 days ago', likes: 17, liked: false, isHidden: false, replies: [],
   },
   {
@@ -68,7 +68,7 @@ function ReplyForm({ onSubmit, onCancel }: {
   }
 
   return (
-    <div className="mt-3 ml-12 md:ml-14  border border-[#2a3548] rounded-xl p-4 space-y-3">
+    <div className="mt-2 ml-12 md:ml-14  rounded-xl p-4 space-y-3">
       <div className="flex gap-3 items-center">
         {avatar ? (
           <div className="relative shrink-0">
@@ -323,7 +323,7 @@ export default function CommentSection() {
     : `${totalPeople}+ people commented`
 
   return (
-    <section className="py-20 md:py-24 bg-colorbo">
+    <section className="py-2 md:py-10 bg-white">
       <div className="max-w-3xl mx-auto px-5 md:px-6">
 
         {/* Header */}
@@ -335,15 +335,15 @@ export default function CommentSection() {
           <div className="flex items-center gap-5 text-sm text-[#8b949e] flex-wrap">
             <div className="flex items-center gap-2">
               <MessageCircle className="w-4 h-4 text-colorbrand" />
-              <span><strong className="text-white">{totalPeople}</strong> comments</span>
+              <span><strong className="text-colorbo">{totalPeople}</strong> comments</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4 text-colorbrand" />
-              <span><strong className="text-white">{totalPeople}</strong> people joined</span>
+              <span><strong className="text-colorbo">{totalPeople}</strong> people joined</span>
             </div>
             <div className="flex items-center gap-2">
               <MessageCircle className="w-3.5 h-3.5 text-colorbrand" />
-              <span><strong className="text-white">{totalReplies}</strong> replies</span>
+              <span><strong className="text-colorbo">{totalReplies}</strong> replies</span>
             </div>
           </div>
         </div>

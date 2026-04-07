@@ -21,10 +21,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-5">
                <Image
-      src="/images/Logo1.png"
+      src="/images/Logo.png"
       alt="My image"
       width={200}
       height={100}
+      className="w-auto h-auto"
     />
              
             </div>

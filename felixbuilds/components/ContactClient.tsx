@@ -322,7 +322,7 @@ function QuoteForm() {
           className={`${inputCls(errors.message, touched.message)} resize-none`} />
       </Field>
       <div className="flex items-center justify-between gap-4 flex-wrap">
-        <p className="text-[#8b949e] text-xs">Quote Reply: <span className="text-white"> 2-3 business days.</span></p>
+        <p className="text-[#8b949e] text-xs">Quote Reply: <span className="text-colorbo"> 2-3 business days.</span></p>
         <button type="submit" disabled={status === 'loading'}
           className="px-7 py-3.5 bg-[#00AEEF] text-white font-bold text-sm rounded-xl hover:bg-[#38c6ff] disabled:opacity-50 transition-all flex items-center gap-2 shadow-xl shadow-[#00AEEF]/20 hover:scale-105 shrink-0">
           {status === 'loading'
@@ -341,6 +341,7 @@ export default function ContactClient() {
 
   return (
     <>
+    
       {/* Hero */}
       <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className=" absolute top-0 left-0 right-0" />
@@ -358,7 +359,7 @@ export default function ContactClient() {
       </section>
 
       {/* Info cards */}
-      <section className="py-16 bg-white ">
+      <section className="py-5 bg-white ">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {contactInfo.map(({ icon: Icon, title, lines }) => (
@@ -375,9 +376,10 @@ export default function ContactClient() {
       </section>
 
       {/* Forms + Sidebar */}
-      <section className="py-24 bg-colorbo" id="quote">
+      <section className="py-24 bg-white overflow-x-hidden" id="quote ">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-5 gap-10">
+
             {/* Forms */}
             <div className="lg:col-span-3">
               <div className="flex gap-2 mb-8 bg-[#161b22] border border-[#2a3548] rounded-xl p-1 w-fit">
@@ -394,7 +396,7 @@ export default function ContactClient() {
                 <p className="text-[#00AEEF] font-mono text-sm uppercase tracking-widest mb-2">
                   {activeTab === 'contact' ? 'Send a Message' : 'Project Enquiry'}
                 </p>
-                <h2 className="font-display text-3xl lg:text-4xl font-bold text-white">
+                <h2 className="font-display text-3xl lg:text-4xl font-bold text-colorbo">
                   {activeTab === 'contact'
                     ? <>How Can We <span className="text-gradient">Help?</span></>
                     : <>Tell Us About Your <span className="text-gradient">Project</span></>}
@@ -404,7 +406,7 @@ export default function ContactClient() {
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-2 min-w-0 space-y-6 ">
               <div className="bg-[#161b22] border border-[#2a3548] rounded-2xl overflow-hidden">
                 <div className="h-52 relative bg-[#0d1117] flex items-center justify-center">
                   <div className="text-center">
@@ -437,10 +439,10 @@ export default function ContactClient() {
                 </a>
               </div>
 
-              <div className="bg-[#00AEEF]/10 border border-[#00AEEF]/30 rounded-2xl p-5">
+              <div className="bg-[#00AEEF]/20 border border-[#00AEEF]/30 rounded-2xl p-5">
                 <AlertCircle className="w-5 h-5 text-[#00AEEF] mb-3" />
-                <h4 className="font-display font-bold text-white mb-1 text-sm">Site Emergency?</h4>
-                <p className="text-[#8b949e] text-xs leading-relaxed mb-3">For urgent site safety issues, call our 24-hour emergency line.</p>
+                <h4 className="font-display font-bold text-colorbo mb-1 text-sm">Site Emergency?</h4>
+                <p className="text-colorbo/60 text-xs leading-relaxed mb-3">For urgent site safety issues, call our 24-hour emergency line.</p>
                 <a href="tel:+2348106213278" className="text-[#00AEEF] text-sm font-bold hover:underline">+234 810 621 3278 (24/7)</a>
               </div>
             </div>
@@ -449,32 +451,7 @@ export default function ContactClient() {
       </section>
 
 
-      {/* FAQ */}
-      <section className="py-24 bg-white border-t border-[#2a3548]">
-        <div className="max-w-3xl mx-auto px-6 lg:px-10">
-          <div className="text-center mb-12">
-            <p className="text-[#00AEEF] font-mono text-sm uppercase tracking-widest mb-2">FAQ</p>
-            <h2 className="font-display text-4xl font-bold text-colorbo">Common <span className="text-gradient">Questions</span></h2>
-          </div>
-          <div className="space-y-4">
-            {[
-              { q: 'How long does it take to receive a project quote?', a: 'For standard residential projects we provide a preliminary estimate within 3–5 business days. Complex commercial and industrial projects may take up to 2 weeks.' },
-              { q: 'What is your minimum project size?', a: 'We generally work on projects valued at ₦5 million and above. For smaller renovation works, our consulting division can assist or recommend suitable contractors.' },
-              { q: 'Do you work on projects outside Lagos?', a: 'Yes — we have active projects and representatives in Abuja, Port Harcourt, and Ibadan, and regularly take on projects across Nigeria.' },
-              { q: 'Do you provide financing for construction projects?', a: 'FelixBuilds does not provide direct financing, but we have strong relationships with financial institutions and can facilitate introductions for qualified clients.' },
-              { q: 'Can I visit a FelixBuilds project site?', a: 'Yes, subject to safety requirements and prior arrangement. Contact our team to schedule a site visit to an active or recently completed project near you.' },
-            ].map(({ q, a }) => (
-              <details key={q} className="group bg-[#161b22] border border-[#2a3548] rounded-xl overflow-hidden">
-                <summary className="flex items-center justify-between p-5 cursor-pointer list-none text-white font-medium text-sm hover:text-[#00AEEF] transition-colors">
-                  {q}
-                  <span className="text-[#00AEEF] text-lg group-open:rotate-45 transition-transform ml-4 shrink-0">+</span>
-                </summary>
-                <div className="px-5 pb-5 text-white/80 text-sm leading-relaxed border-t border-[#2a3548] pt-4">{a}</div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+    
     </>
   )
 }

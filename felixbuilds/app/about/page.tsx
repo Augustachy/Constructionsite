@@ -54,7 +54,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
 
-      <section className="relative pt-32 pb-20 bg-white  overflow-hidden">
+      <section className="relative pt-32 pb-2 bg-white  overflow-hidden">
         <div className="absolute top-0 left-0 right-0" />
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="max-w-3xl">
@@ -88,7 +88,7 @@ export default function AboutPage() {
               <div className="rounded-2xl overflow-hidden border border-[#2a3548] aspect-[4/3]">
                 <Image
                   src="/images/building_site.png"
-                  alt="FelixBuilds story"
+                  alt="Building"
                   fill
                   className="object-cover"
                 />
@@ -115,7 +115,7 @@ export default function AboutPage() {
                Our mission is to make construction simple, reliable, and high-quality for every client we serve.
                 </p>
               </div>
-              <div className="mt-8 grid grid-cols-3 gap-4">
+              <div className="mt-8 grid grid-cols-3 gap-3">
                 {[
                   { v: "50+", l: "Projects" },
                   { v: "15yr  +", l: "Experience" },
@@ -123,9 +123,9 @@ export default function AboutPage() {
                 ].map(({ v, l }) => (
                   <div
                     key={l}
-                    className="bg-[#0d1117] border border-[#2a3548] rounded-xl p-4 text-center"
+                    className="bg-[#0d1117] border border-[#2a3548] rounded-xl p-4 text-center overflow-hidden"
                   >
-                    <div className="font-display text-2xl font-bold text-[#00AEEF]">
+                    <div className="font-display text-l font-bold text-[#00AEEF]">
                       {v}
                     </div>
                     <div className="text-[#8b949e] text-xs mt-1">{l}</div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission / Vision */}
-      <section className="py-24 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#161b22] border border-[#2a3548] rounded-2xl p-8 hover:border-[#00AEEF]/30 transition-colors">
@@ -146,7 +146,7 @@ export default function AboutPage() {
               <h3 className="font-display text-2xl font-bold text-white mb-3">
                 Our Mission
               </h3>
-              <p className="text-[#8b949e] leading-relaxed">
+              <p className="text-white/80 leading-relaxed">
                 To deliver construction projects of the highest quality, on time
                 and within budget, while fostering sustainable practices and
                 uplifting the communities in which we build.
@@ -157,7 +157,7 @@ export default function AboutPage() {
               <h3 className="font-display text-2xl font-bold text-white mb-3">
                 Our Vision
               </h3>
-              <p className="text-[#8b949e] leading-relaxed">
+              <p className="text-white/80 leading-relaxed">
                 To be Nigeria's most trusted construction company — recognized
                 for innovation, integrity, and the lasting impact we have on
                 built environments across the country.
@@ -168,7 +168,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="text-center mb-14">
             <p className="text-[#00AEEF] font-mono text-sm uppercase tracking-widest mb-2">
@@ -200,9 +200,9 @@ export default function AboutPage() {
      
 
       {/* CTA */}
-      <section className="py-20 bg-colorbo">
+      <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-display text-4xl font-bold text-white mb-4">
+          <h2 className="font-display text-4xl font-bold text-colorbo mb-4">
             Ready to Build With the Best?
           </h2>
           <p className="text-[#8b949e] mb-8 leading-relaxed">
