@@ -127,7 +127,7 @@ const differentiators = [
 export default function ServicesPage() {
   return (
     <>
-      <div className="bg-colorbo h-24"></div>
+      
       {/* Hero */}
       <section className="relative pt-32 pb-20 bg-white overflow-hidden">
         <div className=" absolute top-0 left-0 right-0" />

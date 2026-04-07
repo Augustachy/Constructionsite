@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  CheckCircle,
   Target,
   Eye,
    Hammer,
@@ -54,7 +53,6 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <div className="bg-colorbo h-24"></div>
 
       <section className="relative pt-32 pb-20 bg-white  overflow-hidden">
         <div className="absolute top-0 left-0 right-0" />
